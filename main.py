@@ -29,37 +29,37 @@ if app_mode == "Home":
                 
     Our goal is to help farmers identify plant diseases efficiently. Simply upload an image of the affected plant, and our AI-powered system will analyze it to detect any signs of disease. Together, let's protect our crops and ensure a healthier, more sustainable harvest! Our platform is an AI-powered digital solution designed to help farmers identify, manage, and prevent crop diseases efficiently. By leveraging computer vision, deep learning, and IoT technologies, we provide real-time disease detection and expert treatment recommendations to ensure healthier crops and better yields.
                 
-    ### How It Works 🌱
+    ### How It Works 
     -1️⃣ Submit an Image:Go to the **Disease Detection** page and upload a clear photo of the affected plant.
     -2️⃣ AI Processing:Our advanced deep learning model will analyze the image to detect potential diseases.
     -3️⃣ Diagnosis & Solutions:Receive instant results with disease identification and expert-recommended treatments.
 
     ### Why Choose Us?
-    - **✅High Precision:** Our AI-driven model ensures reliable and accurate plant disease detection.  
-    - **🎯Simple & Intuitive:** User-friendly interface designed for easy navigation and seamless experience.  
-    - **⚡Quick & Effective:** Get instant disease analysis and recommendations, enabling fast decision-making.  
+    - **High Precision:** Our AI-driven model ensures reliable and accurate plant disease detection.  
+    - **Simple & Intuitive:** User-friendly interface designed for easy navigation and seamless experience.  
+    - **Quick & Effective:** Get instant disease analysis and recommendations, enabling fast decision-making.  
 
-    ### Get Started 🚀  
-    Click on the **🌿 Disease Recognition** page in the sidebar to **upload an image** and experience the power of our **AI-Powered Plant Disease Detection System!** 🌱✨
+    ### Get Started  
+    Click on the **🌿 Disease Recognition** page in the sidebar to **upload an image** and experience the power of our **AI-Powered Plant Disease Detection System!** 
 
     ### About Us
-    Learn more about our **project, team, and mission** on the **🔍 About** page. Let's work together for a healthier, more sustainable future in agriculture! 🌱✨  
+    Learn more about our **project, team, and mission** on the ** About** page. Let's work together for a healthier, more sustainable future in agriculture!   
     """)
 
 # About Project
 elif app_mode == "About":
     st.header("About")
     st.markdown("""
-                ### Our Platform  🌱 
+                ### Our Platform  
                 Our platform is an **AI-powered digital solution** designed to assist farmers in **detecting, managing, and preventing crop diseases** effectively.  
 
-                #### How It Helps Farmers 🔍 
+                #### How It Helps Farmers 
                 *"Our intelligent system enables farmers to diagnose crop diseases using image analysis and environmental data, delivering fast and precise treatment recommendations."*  
 
                 ---
                 By integrating **computer vision, deep learning, and IoT technologies**, our platform ensures **real-time disease detection** and provides expert guidance for **healthier crops and increased yields.** 🌾🚀
             
-                #### About Dataset 📊  
+                #### About Dataset 
                 This dataset is an **enhanced version** created using IEEE and Kagle augmentation from the original dataset, which can be found on the **GitHub repository respectively**.  
 
                 It consists of **87,000+ RGB images** of **healthy and diseased crop leaves**, categorized into **38 different classes**. The dataset is split into an **80/20 ratio** for training and validation, maintaining the original directory structure. Additionally, a separate directory containing **33 test images** has been created for prediction purposes.  
@@ -105,7 +105,7 @@ elif app_mode == "Product Recommendation":
     image_path = "assets/Pesticides_recomdation_image.png"
     if os.path.exists(image_path):
         img = Image.open(image_path)
-        img = img.resize((400, int(400 * img.height / img.width)))
+        img = img.resize((300, int(400 * img.height / img.width)))
         st.image(image_path, caption="Pesticides Recommendation", use_container_width=False)
     else:
         st.error(f"Image not found: {image_path}")
@@ -162,7 +162,47 @@ elif app_mode == "Product Recommendation":
             "Copper_Hydroxide.jpeg", "Chlorothalonil-720-1.png", "Metalaxyl.jpeg", "Chlorothalonil-720-1.png",
             "Propiconazole.jpeg", "Abamectin_insecticide.jpeg", "Difenoconazole.jpeg", "Thiamethoxam_insecticide.jpeg",
             "Copper_Hydroxide.jpeg", "mosaic_virus_tomato.jpg"
-        ]
+        ],
+            "Purchase Link": [
+        "https://www.amazon.com/s?k=mancozeb",  # Mancozeb
+        "https://www.domyown.com/captan-fungicide-s-5.html",  # Captan
+        "https://www.amazon.com/s?k=copper+fungicide",  # Copper Fungicide
+        "",  # None
+        "",  # None
+        "https://www.amazon.com/s?k=sulfur+fungicide",  # Sulfur Spray
+        "",  # None
+        "https://www.syngenta-us.com/fungicides/amistar",  # Azoxystrobin
+        "https://www.syngenta-us.com/fungicides/bravo-weather-stik",  # Chlorothalonil
+        "https://www.syngenta-us.com/fungicides/tilt",  # Propiconazole
+        "",  # None
+        "https://www.amazon.com/s?k=mancozeb",  # Mancozeb
+        "https://www.amazon.com/s?k=myclobutanil",  # Myclobutanil
+        "https://www.amazon.com/s?k=copper+hydroxide",  # Copper Hydroxide
+        "",  # None
+        "https://www.amazon.com/s?k=imidacloprid",  # Imidacloprid
+        "https://www.amazon.com/s?k=copper+oxychloride",  # Copper Oxychloride
+        "",  # None
+        "https://www.amazon.com/s?k=copper+hydroxide",  # Copper Hydroxide
+        "",  # None
+        "https://www.syngenta-us.com/fungicides/bravo-weather-stik",  # Chlorothalonil
+        "https://www.syngenta-us.com/fungicides/ridomil-gold-sl",  # Metalaxyl
+        "",  # None
+        "",  # None
+        "",  # None
+        "https://www.amazon.com/s?k=sulfur+fungicide",  # Sulfur Fungicide
+        "https://www.domyown.com/captan-fungicide-s-5.html",  # Captan
+        "",  # None
+        "https://www.amazon.com/s?k=copper+hydroxide",  # Copper Hydroxide
+        "https://www.syngenta-us.com/fungicides/bravo-weather-stik",  # Chlorothalonil
+        "https://www.syngenta-us.com/fungicides/ridomil-gold-sl",  # Metalaxyl
+        "https://www.syngenta-us.com/fungicides/bravo-weather-stik",  # Chlorothalonil
+        "https://www.syngenta-us.com/fungicides/tilt",  # Propiconazole
+        "https://www.amazon.com/s?k=abamectin+insecticide",  # Abamectin
+        "https://www.amazon.com/s?k=difenoconazole",  # Difenoconazole
+        "https://www.amazon.com/s?k=thiamethoxam",  # Thiamethoxam
+        "https://www.amazon.com/s?k=copper+hydroxide",  # Copper Hydroxide
+        ""  # None
+    ]
     }
 
     df = pd.DataFrame(data)
@@ -173,6 +213,7 @@ elif app_mode == "Product Recommendation":
     for index, row in filtered_df.iterrows():
         if row["Product Image"]:  # Only show if there's an image
             image_path = os.path.join("assets", row["Product Image"])
+            
             if os.path.exists(image_path):
                 st.image(image_path, caption=row["Pesticide/Insecticide"], use_column_width=True)
             else:
@@ -180,13 +221,15 @@ elif app_mode == "Product Recommendation":
         
         st.write(f"**Pesticide/Insecticide:** {row['Pesticide/Insecticide']}")
         st.write(f"**Fertilizer/Manure:** {row['Fertilizer/Manure']}")
+        if row["Purchase Link"]:
+         st.markdown(f"[Purchase this product]({row['Purchase Link']})", unsafe_allow_html=True)
         st.write("---")
 
 # Crop Info Page
 elif app_mode == "Crop Info":
     st.header("Crop Information")
     
-    # Crop Data Dictionary (Arranged in Ascending Order)
+    
     crop_data = {
         "Apple": {
             "sowing_start": "December", "sowing_end": "February", "harvest_days": 150,

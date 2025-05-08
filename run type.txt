@@ -1,0 +1,12 @@
+*Guide For Run* 
+install all the libraries then, 
+conda activate tf_ene
+streamlit main.py
+
+*Project Credits*
+Database credite of the project given the vipoole for data set. 
+Dataset Link: https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset
+Dataset Link: https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset
+
+Project was made with the help of Youtube channel "SPOTLESS TECH"
+Playlist of Project: https://www.youtube.com/playlist?list=PLvz5lCwTgdXDNcXEVwwHsb9DwjNXZGsoy
